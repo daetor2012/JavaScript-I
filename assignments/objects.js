@@ -18,28 +18,47 @@ const example = {
 }
 
 // Write your intern objects here:
-
+const array1 = [
+  { id: 0, email: "mmelloy0@psu.edu", name: "Mitzi", gender: "F"},
+  { id: 1, email: "kdiben1@tinypic.com", name: "Kennan", gender: "M"},
+  { id: 2, email: "kmummery2@wikimedia.org", name: "Keven", gender: "M"},
+  { id: 3, email: "gmartinson3@illinois.edu", name: "Gannie", gender: "M"},
+  { id: 4, email: "adaine5@samsung.com", name: "Antonietta", gender: "F"}
+];
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
-
+let mName = array1[0].name;
+console.log(mName);
 // Mitzi's name
 
+
 // Kennan's ID
-
+let kID = array1[2].id;
+console.log(kID);
 // Keven's email
-
+let kEmail = array1[2].email;
+console.log(kEmail);
 // Gannie's name
-
+let gName = array1[3].name;
+console.log(gName);
 // Antonietta's Gender
-
+let aGender = array1[4].gender;
+console.log(aGender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+function kennan_speak(message) {
+  return message;
+}
+console.log(kennan_speak("Hello, my name is Kennan!"));
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+function multiplyNums(param1, param2) {
+  let result = param1 * param2;
+  return result;
+}
+console.log(multiplyNums(3, 4));
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
@@ -62,3 +81,4 @@ const parent = {}
 // Have the child speak
 
 // Have the grandchild speak
+
